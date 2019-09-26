@@ -46,7 +46,11 @@ class MyGame(arcade.Window):
 
     def setup(self):
         self.animal_sprite = arcade.Sprite("assets/crocodile.png", 0.5)
-        self.animal_sprite.center_x = 400
+        self.animal_sprite.center_x = 350
+        self.animal_sprite.center_y = 300
+        self.animal_list.append(self.animal_sprite)
+        self.animal_sprite = arcade.Sprite("assets/panda.png", 0.5)
+        self.animal_sprite.center_x = 450
         self.animal_sprite.center_y = 300
         self.animal_list.append(self.animal_sprite)
 
